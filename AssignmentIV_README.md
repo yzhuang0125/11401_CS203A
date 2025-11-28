@@ -30,7 +30,7 @@ return (key % m + m) % m
 ### 字串 Hash
 - 設計概念：使用多項式滾動 hash
 - 虛擬碼：
-- 
+
 ```cpp
 function hashString(s, m):
 h = 0 
@@ -83,9 +83,9 @@ String Hash Distribution:
 ```
 
 ### 結果觀察
-1. 整數 key 分布均勻
-2. 字串 key 分布稍有不均勻
-3. 增加 table size m 可改善均勻性
+  1. 整數 key 分布均勻
+  2. 字串 key 分布稍有不均勻
+  3. 增加 table size m 可改善均勻性
 
 ## Analysis
 **因為以字典的例子來說，我想到set應該也能夠適用，問過GPT以後證實integer和string都能夠適用，且set寫法更方便且簡單。**
@@ -96,6 +96,6 @@ String Hash Distribution:
   3. 比較效率、複雜度
 
 ## 心得
-    1. Github操作好難
-    2. makefile好難
-    3. 最簡單的是function本人
+  1. Github操作好難
+  2. makefile好難
+  3. 最簡單的是function本人
