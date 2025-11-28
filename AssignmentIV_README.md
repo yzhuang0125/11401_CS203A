@@ -6,9 +6,9 @@
 ## Hash function 設計概念
 - 方案
     1. Vector-Vector
-        *有更多空間*
+        **有更多空間**
     2. Array-Linked List
-        *插入刪除方便*
+        **插入刪除方便**
     3. Vector-Set
         - 插入刪除方便，也不需要更改設定prev和next
         - 支援Ordering
@@ -30,10 +30,14 @@ return (key % m + m) % m`
 - 設計概念：使用多項式滾動 hash
 - 虛擬碼：
 - 
-`function hashString(s, m): <br>
-h = 0 <br>
-for each character c in s: <br>
-h = (h*31 + ord(c)) % m <br>
+`function hashString(s, m):
+
+h = 0 
+
+for each character c in s: 
+
+h = (h*31 + ord(c)) % m 
+
 return h`
 
 
@@ -41,38 +45,64 @@ return h`
 
 ### Windows
 
-`Makefile.bat <br>
-Makefile.bat all <br>
-Makefile.bat c <br>
-Makefile.bat cxx <br>
-Makefile.bat <br>
+`Makefile.bat 
+
+Makefile.bat all 
+
+Makefile.bat c 
+
+Makefile.bat cxx 
+
+Makefile.bat 
+
 clean` 
 
 ## 測試結果
 
 ### 執行結果
 
-`Int Hash Distribution: <br>
-[0] size = 2 <br>
-[1] size = 2 <br>
-[2] size = 2 <br>
-[3] size = 2 <br>
-[4] size = 2 <br>
-[5] size = 2 <br>
-[6] size = 2 <br>
-[7] size = 2 <br>
-[8] size = 2 <br>
-[9] size = 2 <br>
-String Hash Distribution: <br>
-[0] size = 1 <br>
-[1] size = 1 <br>
-[2] size = 2 <br>
-[3] size = 2 <br>
-[4] size = 2 <br>
-[5] size = 2 <br>
-[6] size = 2 <br>
-[7] size = 1 <br>
-[8] size = 1 <br>
+`Int Hash Distribution: 
+
+[0] size = 2
+
+[1] size = 2 
+
+[2] size = 2 
+
+[3] size = 2 
+
+[4] size = 2 
+
+[5] size = 2 
+
+[6] size = 2 
+
+[7] size = 2 
+
+[8] size = 2 
+
+[9] size = 2 
+
+String Hash Distribution: 
+
+[0] size = 1 
+
+[1] size = 1 
+
+[2] size = 2 
+
+[3] size = 2 
+
+[4] size = 2 
+
+[5] size = 2 
+
+[6] size = 2
+
+[7] size = 1 
+
+[8] size = 1 
+
 [9] size = 1`
 
 ### 結果觀察
@@ -81,7 +111,7 @@ String Hash Distribution: <br>
 3. 增加 table size m 可改善均勻性
 
 ## Analysis
-*因為以字典的例子來說，我想到set應該也能夠適用，問過GPT以後證實integer和string都能夠適用，且set寫法更方便且簡單。*
+**因為以字典的例子來說，我想到set應該也能夠適用，問過GPT以後證實integer和string都能夠適用，且set寫法更方便且簡單。**
 
 ## Reflation
   1. 確認實用與可行性
