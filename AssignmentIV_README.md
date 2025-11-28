@@ -22,6 +22,7 @@
 ### 整數 Hash
 - 設計概念：使用取模法，讓 key 均勻分布於 table
 - 虛擬碼：
+
 ```function hashInt(key, m):
 return (key % m + m) % m```
 
