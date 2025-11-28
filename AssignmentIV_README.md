@@ -1,5 +1,5 @@
-#Assignment IV README
-##環境
+# Assignment IV README
+## 環境
 - 作業系統：Windows
 - 編譯器：g++ 11 / Visual Studio 2022  
 - 開發工具：VS Code  
