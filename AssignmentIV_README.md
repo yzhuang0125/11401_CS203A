@@ -25,9 +25,6 @@
 ```function hashInt(key, m):
 return (key % m + m) % m```
 
-markdown
-複製程式碼
-
 ### 字串 Hash
 - 設計概念：使用多項式滾動 hash
 - 虛擬碼：
