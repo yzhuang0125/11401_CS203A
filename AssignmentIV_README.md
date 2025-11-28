@@ -23,87 +23,64 @@
 - 設計概念：使用取模法，讓 key 均勻分布於 table
 - 虛擬碼：
 
-`function hashInt(key, m): <br>
-return (key % m + m) % m`
+```function hashInt(key, m):
+return (key % m + m) % m
+```
 
 ### 字串 Hash
 - 設計概念：使用多項式滾動 hash
 - 虛擬碼：
 - 
-`function hashString(s, m):
-
+```cpp
+function hashString(s, m):
 h = 0 
-
 for each character c in s: 
-
 h = (h*31 + ord(c)) % m 
-
-return h`
+return h
+```
 
 
 ## Compilation, Build, Execution & Output
 
 ### Windows
 
-`Makefile.bat 
-
-Makefile.bat all 
-
-Makefile.bat c 
-
-Makefile.bat cxx 
-
+```
 Makefile.bat 
-
-clean` 
+Makefile.bat all 
+Makefile.bat c 
+Makefile.bat cxx 
+Makefile.bat 
+clean
+```
 
 ## 測試結果
 
 ### 執行結果
 
-`Int Hash Distribution: 
-
+```
+Int Hash Distribution: 
 [0] size = 2
-
 [1] size = 2 
-
 [2] size = 2 
-
 [3] size = 2 
-
 [4] size = 2 
-
 [5] size = 2 
-
 [6] size = 2 
-
 [7] size = 2 
-
 [8] size = 2 
-
 [9] size = 2 
-
 String Hash Distribution: 
-
 [0] size = 1 
-
 [1] size = 1 
-
 [2] size = 2 
-
 [3] size = 2 
-
 [4] size = 2 
-
 [5] size = 2 
-
 [6] size = 2
-
 [7] size = 1 
-
 [8] size = 1 
-
-[9] size = 1`
+[9] size = 1
+```
 
 ### 結果觀察
 1. 整數 key 分布均勻
