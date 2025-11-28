@@ -29,24 +29,24 @@ return (key % m + m) % m`
 ### 字串 Hash
 - 設計概念：使用多項式滾動 hash
 - 虛擬碼：
-```function hashString(s, m):
+`function hashString(s, m):
 h = 0
 for each character c in s:
 h = (h*31 + ord(c)) % m
-return h
+return h`
 
 ## 4. Compilation, Build, Execution & Output
 
 ### Windows
-```Makefile.bat
+`Makefile.bat
 Makefile.bat all
 Makefile.bat c
 Makefile.bat cxx
-Makefile.bat clean
+Makefile.bat clean`
 
 ##測試結果
 ###執行結果
-```Int Hash Distribution:
+`Int Hash Distribution:
 [0] size = 2
 [1] size = 2
 [2] size = 2
@@ -67,7 +67,7 @@ String Hash Distribution:
 [6] size = 2
 [7] size = 1
 [8] size = 1
-[9] size = 1
+[9] size = 1`
 
 ###結果觀察
 1. 整數 key 分布均勻
