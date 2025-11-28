@@ -6,9 +6,9 @@
 ## Hash function 設計概念
 - 方案
     1. Vector-Vector
-        *有更多空間
+        - 有更多空間
     2. Array-Linked List
-        *插入刪除方便
+        - 插入刪除方便
     3. Vector-Set
         - 插入刪除方便，也不需要更改設定prev和next
         - 支援Ordering
@@ -88,7 +88,8 @@ String Hash Distribution:
   3. 增加 table size m 可改善均勻性
 
 ## Analysis
-**因為以字典的例子來說，我想到set應該也能夠適用，問過GPT以後證實integer和string都能夠適用，且set寫法更方便且簡單。
+
+因為以字典的例子來說，我想到set應該也能夠適用，問過GPT以後證實integer和string都能夠適用，且set寫法更方便且簡單。
 
 ## Reflation
   1. 確認實用與可行性
