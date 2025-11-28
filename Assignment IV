@@ -2,7 +2,7 @@
 
 ## 資料夾結構
 AssignmentIV/
-├── C/ # C 語言實作（如果有）
+├── C/ # C 語言實作
 ├── CXX/ # C++ 實作
 │ ├── hash_fn.hpp
 │ ├── hash_fn.cpp
