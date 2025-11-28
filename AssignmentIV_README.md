@@ -23,8 +23,8 @@
 - 設計概念：使用取模法，讓 key 均勻分布於 table
 - 虛擬碼：
 
-```function hashInt(key, m):
-return (key % m + m) % m
+`function hashInt(key, m):
+return (key % m + m) % m`
 
 ### 字串 Hash
 - 設計概念：使用多項式滾動 hash
@@ -81,3 +81,8 @@ String Hash Distribution:
   1. 確認實用與可行性
   2. 考慮個人實力是否能執行
   3. 比較效率、複雜度
+
+##心得
+    1. Github操作好難
+    2. makefile好難
+    3. 最簡單的是function本人
