@@ -21,13 +21,13 @@ int main() {
         insertString(tableStr, key, m);
     }
 
-    // ¦L¥X¾ã¼Æ¤À¥¬
+    // å°å‡ºæ•´æ•¸åˆ†å¸ƒ
     cout << "Int Hash Distribution:" << endl;
     for (int i = 0; i < m; i++) {
         cout << "[" << i << "] size = " << tableInt[i].size() << endl;
     }
 
-    // ¦L¥X¦r¦ê¤À¥¬
+    // å°å‡ºå­—ä¸²åˆ†å¸ƒ
     cout << "String Hash Distribution:" << endl;
     for (int i = 0; i < m; i++) {
         cout << "[" << i << "] size = " << tableStr[i].size() << endl;
