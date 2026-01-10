@@ -1,11 +1,11 @@
-## Array
+# Array
 
-### 長相
+## 長相
 一條格子
 
 ![array appearance](https://drive.google.com/uc?id=1Jw4bfLZh1Ft1DiKNhZHSOTIk4A4bJeHH)
 
-### 特性
+## 特性
   1. 記憶體
       - 記憶體空間連續
       - O(1)，存取快
@@ -21,7 +21,7 @@
      空間使用率高
 
 
-### 超精闢見解專區
+## 超精闢見解專區
 
 ![馬卡龍](https://drive.google.com/uc?id=1M8X5CI1RYiaqYBDXf-UKW_ofkVhsGqrJ)
     
